@@ -31,3 +31,15 @@ Create a [Netlify](https://www.netlify.com/) Account and then follow the instruc
 ## Preview
 
 ![Preview of the app](/images/page.png 'Preview of the app')
+
+## Troubleshoot
+If you get an `ERR_PACKAGE_PATH_NOT_EXPORTED` error,  
+then inside the [package.json](package.json) simply add to the `react-scripts` commands this flag `--openssl-legacy-provider` as follows:
+```json
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject"
+  }
+```
