@@ -1,2 +1,16 @@
 .git
+.gitignore
 Dockerfile
+
+# Ignore development dependencies and build artifacts
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+build
+coverage
+
+# Ignore editor-specific files
+.vscode
+*.swp
+.DS_Store
