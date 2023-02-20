@@ -5,6 +5,6 @@ WORKDIR /app
 COPY package*.json .
 RUN yarn install
 COPY . .
-EXPOSE 3000
+
 ENV REACT_APP_NAME=Dovi
 ENTRYPOINT ["yarn", "start"]
