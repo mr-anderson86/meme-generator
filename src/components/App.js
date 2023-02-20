@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <h1>Meme Generator</h1>
+      <h1>{process.env.REACT_APP_NAME}'s Meme Generator</h1>
       <InputFields
         setOverlayHidden={setOverlayHidden}
         topText={topText}
